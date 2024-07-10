@@ -1,0 +1,17 @@
+[package]
+name = "cartesia"
+version = "0.0.1"
+edition = "2021"
+readme = "README.md"
+description = "A Rust library for the Cartesia API."
+license = "MIT/Apache-2.0"
+authors = ["b0xtch"]
+repository = "https://github.com/b0xtch/cartesia"
+
+[dependencies]
+serde = { version = "^1.0", features = ["derive"] }
+serde_with = { version = "^3.8", default-features = false, features = ["base64", "std", "macros"] }
+serde_json = "^1.0"
+url = "^2.5"
+uuid = { version = "^1.8", features = ["serde", "v4"] }
+reqwest = { version = "^0.12", features = ["json", "multipart"] }
